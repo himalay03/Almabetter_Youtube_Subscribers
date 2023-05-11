@@ -29,7 +29,9 @@ GET /subscribers/name: This route retrieves subscribers' information based on na
 ## Project Folder Structure
 1. index.js used to connect and start server.
 2. app.js used to handle request and response.
-3. Run  (node src/createDatabase.js) to create Database on local storage.  
+3. Run  (node src/createDatabase.js) to create Database on local storage. 
+4. src/models/subscriber.js for schema.
+5. data.js for data which have to be connected with database. 
 
 ## Tech Stack
 ExpressJs,
