@@ -3,7 +3,7 @@ A backend project on Youtube-Subscribers using ExpressJs, MongoDb, and NodeJs.
 
 ## Deployment
 Link to visit Youtube Subscriber video.
-https://www.youtube.com/watch?v=vVFROxt5mms&t=119s
+https://youtu.be/TT6xmYqPTKQ
 
 ## Clone the project
 ### git clone
