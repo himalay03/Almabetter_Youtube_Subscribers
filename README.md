@@ -1,158 +1,44 @@
 # Almabetter_Youtube_Subscribers
 A backend project on Youtube-Subscribers using ExpressJs, MongoDb, and NodeJs.
-Youtube subscriber's backend Api accessed to get the subscriber's information using specific routes end point.
-By including particular routes end point in the URL.
 
 ## Deployment
-Deployment link:
-https://get-youtube-subs-almabetter.vercel.app/
+Link to visit Youtube Subscriber video.
+https://www.youtube.com/watch?v=vVFROxt5mms&t=119s
 
-<!-- TABLE OF CONTENTS -->
-<details>
-    <summary>Content</summary>
-    <ol>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#Demo">Demo</a></li>
-        <li><a href="#Quick-Start">Quick Start</a></li>
-        <li><a href="#how-to-run-locally">How to run Locally</a></li>
-        <li><a href="#API-Reference">API reference</a></li>
-        <li><a href="#faq">FAQ</a></li>
-    </ol>
-</details>
+## Clone the project
+### git clone
+https://github.com/himalay03/flashcard-generator.git
 
-## How to run Locally
+### Install dependencies
+npm install
 
-Clone the project
+### Start the server
+nodemon src/index.js
 
-```bash
-https://github.com/RabinChakraborty/GetYoutubeSubs-Almabetter.git
-```
+## About The App
+The project is an Express.js application that interacts with a MongoDB database. Its purpose is to retrieve information about YouTube subscribers from the MongoDB database. The subscribers' data consists of fields such as id, name, subscribed channel, and subscribed date.
 
-Go to the project directory
+The project includes three GET routes, each serving a specific purpose:
 
-```bash
-  cd Youtube-subs
-```
+GET /subscribers: This route retrieves all subscribers' information from the MongoDB collection. It uses Mongoose's find() method to retrieve all documents from the subscribers collection and sends the retrieved data as a response.
 
-Install dependencies
+GET /subscribers/:_id: This route retrieves a specific subscriber's information based on the provided _id parameter. The _id corresponds to the unique identifier of a subscriber in the MongoDB collection. It uses Mongoose's findById() method to query the collection for a document with the specified _id and sends the retrieved data as a response.
 
-```bash
-  npm install
-```
+GET /subscribers/name: This route retrieves subscribers' information based on name and subscribed channel. It uses Mongoose's find() method with a query parameter to filter the collection based on the sname and subscribed channel and sends the retrieved data as a response.
 
-Create .env file using .env.sample.
+## Project Folder Structure
+=> index.js used to connect and start server.
+=> app.js used to handle request and response.
+=> Run  (node src/createDatabase.js) to create Database on local storage.  
 
-Set the environment key DATABASE_URL with you mongoDB connection URL
+##Tech Stack
+ExpressJs,
+MongoDB,
+Mongoose,
+NodeJs
 
-Start the server
+##🛠 Skills
+Javascript
 
-```bash
-  npm run start
-```
-
-## Quick Start
-
-Node.js module should be installed in your machine befor download the project and run this command
-
-```bash
-  npm install
-```
-
-Start the server:
-
-```bash
-  npm start
-```
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`PORT`
-
-`DATABASE_URL`
-
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  npm run test
-```
-
-## API Reference
-
-#### Get all subscribers
-
-```http
-  GET /subscribers
-```
-
-#### Get all subscriberChannel and name only
-
-```http
-  GET /subscribers/names
-```
-
-#### Get single subscriber
-
-```http
-  GET /subscribers/:id
-```
-
-| Parameter | Type     | Description                             |
-| :-------- | :------- | :-------------------------------------- |
-| `id`      | `string` | **Required**. Id of subscriber to fetch |
-
-#### Add subscriber
-
-```http
-  POST /subscribers
-```
-
-#### Delete subscriber
-
-```http
-  DELETE /subscribers/:id
-```
-
-| Parameter | Type     | Description                              |
-| :-------- | :------- | :--------------------------------------- |
-| `id`      | `string` | **Required**. Id of subscriber to delete |
-
-#### Update subscriber
-
-```http
-  POST /subscribers/:id
-```
-
-| Parameter | Type     | Description                              |
-| :-------- | :------- | :--------------------------------------- |
-| `id`      | `string` | **Required**. Id of subscriber to update |
-
-## Features
-
-- Access all subscribers from remotely hoisted database
-- Add new subscriber to the database
-- Access any perticular data from database through a specific IDs
-- Delete any subscriber from the database through a specific IDs
-- Update any existing subscriber in the database through a specific IDs
-- Access any only subscriber list with names and subscribed Channels
-
-## FAQ
-
-#### How to add new subscribers?
-
-Use Postman to add new subscriber in the database.
-
-#### How to delete new subscribers?
-
-Use Postman to Delete subscriber from the database.
-
-#### How to update new subscribers?
-
-Use Postman to update subscriber from the database.
-
-## 🚀 About Me
-
-I am a web development enthusiast.
+## Project Created By
+Himalaya Sundi
