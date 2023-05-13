@@ -27,11 +27,12 @@ GET /subscribers/:_id: This route retrieves a specific subscriber's information 
 GET /subscribers/name: This route retrieves subscribers' information based on name and subscribed channel. It uses Mongoose's find() method with a query parameter to filter the collection based on the sname and subscribed channel and sends the retrieved data as a response.
 
 ## Project Folder Structure
-1. index.js used to connect and start server.
-2. app.js used to handle request and response.
-3. Run  (node src/createDatabase.js) to create Database on local storage. 
-4. src/models/subscriber.js for schema.
-5. data.js for data which have to be connected with database. 
+1. [src/app.js]  is used to handle requests and responses.
+2. [src/createDatabase.js]  for database creation on MongoDB.
+3. [src/data.js]  for data that have to be connected to a database.
+4. [src/index.js]  is used to connect and start the server.
+5. [src/models/subscriber.js]  for the schema.
+
 
 ## Tech Stack
 ExpressJs,
