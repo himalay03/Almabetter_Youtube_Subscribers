@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 // Home Page
 app.get("/", (req, res) => {
   res.send(
-    "Hello, this is the home page of Youtube Subscribers backend project"
+    `........This is the home page of Youtube Subscribers backend project created by Himalaya Sundi........[GET('/subscribers') to get details of all subscribers.]........[GET('/subscribers/names') to get only names and subscribedchannel details of all subscribers.] ........[GET('/subscribers/:_id') to get details of an individual subscriber by ID.] `
   );
 });
 
