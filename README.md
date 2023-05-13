@@ -5,6 +5,9 @@ A backend project on Youtube-Subscribers using ExpressJs, MongoDb, and NodeJs.
 Link to visit Youtube Subscriber video.
 https://youtu.be/TT6xmYqPTKQ
 
+Web Deployed Link.
+https://wild-plum-chick-gear.cyclic.app/
+
 ## Clone the project
 ### git clone
 https://github.com/himalay03/Almabetter_Youtube_Subscribers.git
