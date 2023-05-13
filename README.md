@@ -2,10 +2,10 @@
 A backend project on Youtube-Subscribers using ExpressJs, MongoDb, and NodeJs.
 
 ## Deployment
-Link to visit Youtube Subscriber video.
+Link to visit Youtube Subscriber video:
 https://youtu.be/TT6xmYqPTKQ
 
-Web Deployed Link.
+Web Deployed Link:
 https://wild-plum-chick-gear.cyclic.app/
 
 ## Clone the project
